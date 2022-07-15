@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+    box-sizing: border-box;
+
+    --card_white: hsl(0, 0%, 100%);
+    --page_background: hsl(212, 45%, 89%);
+    --text_card: hsl(220, 15%, 55%);
+    --title_card: hsl(218, 44%, 22%);
+    --attribution: hsl(228, 45%, 44%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--page_background);
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    margin: 1rem;
+    max-width: 17.5rem;
+    padding: 1.2rem 1.2rem 1.5rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    background-color: var(--card_white);
+}
+
+img {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.descri{
+    padding: 1.3rem 0.2rem;
+}
+
+.descri .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--title_card);
+}
+
+.descri .text {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    color: var(--text_card);
+}
